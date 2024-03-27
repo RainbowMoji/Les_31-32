@@ -85,7 +85,7 @@ while run:
             break
         cloud_list[o] = (cloud_x, cloud_y)
 
-    if cloud_list[-1][0] < WIDTH - 50:
+    if cloud_list[-1][0] < WIDTH - 75:
         next_cloud_time -= 0.1
         if next_cloud_time <= 0:
             create_cloud()
