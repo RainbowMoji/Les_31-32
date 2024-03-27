@@ -71,7 +71,7 @@ while run:
             break
         cactus_list[i] = (cactus_x, cactus_y)
 
-    if cactus_list[-1][0] < WIDTH - 125:
+    if cactus_list[-1][0] < WIDTH - random.randint(125, 225):
         next_cactus_time -= 0.1
         if next_cactus_time <= 0:
             create_cactus()
@@ -85,7 +85,7 @@ while run:
             break
         cloud_list[o] = (cloud_x, cloud_y)
 
-    if cloud_list[-1][0] < WIDTH - 125:
+    if cloud_list[-1][0] < WIDTH - 50:
         next_cloud_time -= 0.1
         if next_cloud_time <= 0:
             create_cloud()
